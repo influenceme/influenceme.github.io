@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<script src="aframe.min.js"></script>
+<!-- include aframe-ar.js -->
+<script src="aframe-ar.js"></script>
+
+<body style='margin : 0px; overflow: hidden; font-family: Monospace;'>
+	<!-- <a-scene embedded arjs='sourceType: image; sourceUrl:../../data/images/armchair.jpg;'> -->
+	<a-scene embedded arjs='sourceType: webcam;'>
+
+		<a-sphere position="0 0.5 0" radius="0.1" color="#EF2D5E"></a-sphere>
+		<a-text position="-3 0 -3" rotation="-90 0 0" width="5" height="auto" color="white" value="
+Einkommensteuergesetz (EStG)
+§ 4h Betriebsausgabenabzug für Zinsaufwendungen (Zinsschranke)
+		"></a-text>
+		<a-text position="-3 0 -2" rotation="-90 0 0" width="3" height="auto" color="white" value="
+		(1) 1Zinsaufwendungen eines Betriebs sind abziehbar in Höhe des Zinsertrags, darüber hinaus nur bis zur Höhe des verrechenbaren EBITDA. 2Das verrechenbare EBITDA ist 30 Prozent des um die Zinsaufwendungen und um die nach § 6 Absatz 2 Satz 1 abzuziehenden, nach § 6 Absatz 2a Satz 2 gewinnmindernd aufzulösenden und nach § 7 abgesetzten Beträge erhöhten und um die Zinserträge verminderten maßgeblichen Gewinns.
+		..."></a-text>
+		
+		<a-text position="0.1 0 -2.7" rotation="-90 0 0" width="3" height="1" color="red" value="
+Achtung (!)"></a-text>
+
+<a-text position="0.1 0 -2.1" rotation="-90 0 0" width="3" height="1" color="white" value="
+§ 4h EStG steht in Konkurrenz zu anderen Regelungen, insbesondere zu § 4 Abs. 4a EStG und § 10d EStG. Das Verhältnis zu diesen Regelungen ergibt sich aus der Systematik des § 4h EStG, der Zinsen in bestimmter Höhe als (noch) nicht abzugsfähige Betriebsausgaben einordnet.
+..."></a-text>
+
+
+  <a-image position="0.4 0 -0.5" rotation="-90 0 0" width="3" height="1.2" src="news.png"></a-image>
+  <a-image position="-2.2 0 -0.4" rotation="-90 0 0" width="1.5" height="1.5" src="schema.png"></a-image>
+
+  <a-text position="-3 0 0.5" rotation="-90 0 0" width="5" height="1" color="white" value="
+Kommentar:"></a-text>
+<a-text position="-3 0 2.7" rotation="-90 0 0" width="5" height="5" color="white" value="
+Vom Anwendungsbereich der Zinsschranke werden Vergütungen für jede Art der Fremdfinanzierung erfasst (§ 4h Abs. 3 Satz 2 EStG). Damit fallen neben den Vergütungen an wesentlich beteiligte Anteilseigner oder ihnen nahe stehende Personen nunmehr auch Vergütungen an fremde Dritte ohne Rückgriffsrecht (insb. gewöhnliche Bankenfinanzierungen) in das Spektrum der erfassten Zinsaufwendungen. Nach der Gesetzesbegründung sind jedoch nur Vergütungen für die Überlassung von Geldkapital betroffen. Eine weitere – sachlogische – Einschränkung des Gesetzgebers hinsichtlich der erfassten Zinsaufwendungen sieht vor, dass diese den steuerpflichtigen Gewinn gemindert haben müssen. Auf die Dauer der Überlassung des Fremdkapitals kommt es nicht an (Tz. 12 BMF-Schreiben)...."></a-text>
+		<!-- <a-plane position="0 0 0" rotation="-90 0 0" width="0.7" height="0.7" color=""></a-plane> -->
+		<!-- <a-plane position="-1 0 -1" rotation="-90 0 0" width="1.5" height="0.7" color="red"></a-plane> -->
+		<!-- <a-plane position="-1 0 0" rotation="-90 0 0" width="0.7" height="1.5" color="red"></a-plane> -->
+		<!-- <!-- <a-plane position="0 0 1" rotation="-90 0 0" width="0.7" height="0.7" color="red"></a-plane> --> 
+		<!-- <a-plane position="-1 0 -1" rotation="-90 0 0" width="0.7" height="0.7" color="red"></a-plane> -->
+		<!-- <a-plane position="-1 0 0" rotation="-90 0 0" width="0.7" height="0.7" color="red"></a-plane> -->
+		<!-- <a-plane position="0 0 -1" rotation="-90 0 0" width="0.7" height="0.7" color="red"></a-plane> -->
+		<!-- <a-plane position="1 0 -1" rotation="-90 0 0" width="0.7" height="0.7" color="red"></a-plane> -->
+		<!-- <a-plane position="-1 0 1" rotation="-90 0 0" width="0.7" height="0.7" color="red"></a-plane> -->
+		
+		<!-- <a-marker-camera preset='hiro'></a-marker-camera> -->
+		<a-marker-camera preset='custom' type='pattern' url='pattern-marker.patt'></a-marker-camera>
+	</a-scene>
+</body>
+</html>
